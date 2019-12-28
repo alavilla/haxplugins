@@ -22,7 +22,6 @@ room.pluginSpec = {
   version: `1.0.0`,
   dependencies: [`sav/commands`],
   config: {
-	  map:1
   },
 };
 
@@ -693,8 +692,8 @@ var handball = `{
 }`
 
 
-  if (room.name === `TESTING`) {
-    room.setCustomStadium(handball);
+  if (room.name === "TESTING") {
+    room.setCustomStadium(handball)
   }
 
 

@@ -695,7 +695,12 @@ var handball = `{
   if (room.roomName === "TESTING") {
     room.setCustomStadium(handball)
     map = 1
+  }
+  else () 
+  {
 	  
+room.setCustomStadium(futsal)
+    map = 2
   }
 
 

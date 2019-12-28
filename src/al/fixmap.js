@@ -18,15 +18,20 @@ const room = HBInit();
 
 room.pluginSpec = {
   name: `fixmap`,
-  author: `salamini`,
+  author: `alavilla/kozlov`,
   version: `1.0.0`,
   dependencies: [`sav/commands`],
+  config: {
+    custom_map: `value`,
+  },
 };
+
+
 
 
 room.onStadiumChange = function(stadiumName, byPlayer) {
   if(byPlayer.name != "Kozlov" &&  byPlayer.id != 0) {
-    room.setDefaultStadium("Big");
+    room.setCustomStadium(custom_map);
   }
 }
 

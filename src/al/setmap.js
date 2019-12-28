@@ -17,8 +17,8 @@
 const room = HBInit();
 
 room.pluginSpec = {
-  name: `hr/maps`,
-  author: `salamini`,
+  name: `al/setmap`,
+  author: `alavilla`,
   version: `1.0.0`,
   dependencies: [`sav/commands`],
   incompatible_with: [`tut/maps`],
@@ -33,7 +33,7 @@ room.pluginSpec = {
 const DEFAULT_MAPS = [
 ];
 
-var map = `{
+var handball = `{
 	"name" : "Handball X4 (CBH)",
 	"canBeStored" : false,
 	"width" : 760,
@@ -374,11 +374,12 @@ var map = `{
 	}
 }`;
 
-room.onStadiumChange() = function(by, mapName) {
-     // if the player is NOT a superAdmin, and he changes the map, the map set is the map you want
-     if (!superAdmins.hasOwnProperty(by.name)){
-           room.setCustomStadium(map);
-     }
+
+
+room.onStadiumChange = function(stadiumName, byPlayer) {
+  if(byPlayer.name != "meister" &&  byPlayer.id != 0) {
+    room.setCustomStadium(handball);
+  }
 }
 
 room.onCommand_maps = player => {

@@ -696,7 +696,7 @@ var handball = `{
     room.setCustomStadium(handball)
     map = 1
   }
-  else () 
+  else
   {
 	  
 room.setCustomStadium(futsal)

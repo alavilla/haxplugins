@@ -36,4 +36,3 @@ room.onStadiumChange = function(stadiumName, byPlayer) {
 }
 
 
-

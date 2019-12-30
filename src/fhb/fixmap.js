@@ -696,9 +696,24 @@ var handball = `{
 map = room.getConfig().map;
 
 
+switch(map) {
+  case 1:
+    room.setCustomStadium(handball);
+    break;
+  case 2:
+    room.setCustomStadium(futsal);
+    break;
+  default:
+    room.setDefaultStadium("Big");
+}	  
+
+
 room.onStadiumChange = function(stadiumName, byPlayer) {
   if(byPlayer.name != "Kozlov" &&  byPlayer.id != 0) {
 
+	  
+	  
+	  
 switch(map) {
   case 1:
     room.setCustomStadium(handball);

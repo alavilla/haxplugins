@@ -693,7 +693,7 @@ var handball = `{
 }`
 
 
-map = room.getConfig().map;
+map = room.pluginSpec.config.map;
 
 
 switch(map) {

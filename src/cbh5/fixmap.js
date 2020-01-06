@@ -706,7 +706,8 @@ room.onStadiumChange = function(stadiumName, byPlayer) {
         room.setCustomStadium(futsal);
         break;
       default:
-        room.setDefaultStadium("Big");
+        room.setDefaultStadium("Big");	
+	console.log(map);
     }
   }
 }

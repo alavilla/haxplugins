@@ -707,7 +707,7 @@ room.onStadiumChange = function(stadiumName, byPlayer) {
         break;
       default:
         room.setDefaultStadium("Big");	
-	console.log(map);
+	console.log(room.getConfig().map);
     }
   }
 }

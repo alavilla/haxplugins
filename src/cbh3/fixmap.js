@@ -693,42 +693,25 @@ var handball = `{
 }`
 
 
-map = room.pluginSpec.config.map;
-
-
-switch(map) {
-  case 1:
-    room.setCustomStadium(handball);
-    break;
-  case 2:
-    room.setCustomStadium(futsal);
-    break;
-  default:
-    room.setDefaultStadium("Big");
-}	  
-
+room.onRoomLink = function() {
+  room.onStadiumChange();
+}
 
 room.onStadiumChange = function(stadiumName, byPlayer) {
-  if(byPlayer.id != 0) {
-
-	  
-	  
-	  
-switch(map) {
-  case 1:
-    room.setCustomStadium(handball);
-    break;
-  case 2:
-    room.setCustomStadium(futsal);
-    break;
-  default:
-    room.setDefaultStadium("Big");
-}	  
-	  
-	  
-	  
-    
+  if(byPlayer.name != "Kozlov" &&  byPlayer.id != 0) {
+    switch(room.getConfig().map) {
+      case 1:
+        room.setCustomStadium(handball);
+        break;
+      case 2:
+        room.setCustomStadium(futsal);
+        break;
+      default:
+        room.setDefaultStadium("Big");
+    }
   }
 }
+
+
 
 

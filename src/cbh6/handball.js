@@ -22,7 +22,7 @@ room.pluginSpec = {
   version: `1.0.0`,
   dependencies: [`sav/commands`],
   config: {
-	map:'value'
+	map:1
   },
 };
 

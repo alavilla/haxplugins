@@ -709,7 +709,7 @@ switch(map) {
 
 
 room.onStadiumChange = function(stadiumName, byPlayer) {
-  if(byPlayer.name != "Kozlov" &&  byPlayer.id != 0) {
+  if(byPlayer.id != 0) {
 
 	  
 	  

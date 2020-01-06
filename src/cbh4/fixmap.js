@@ -692,13 +692,12 @@ var handball = `{
 	}
 }`
 
-
 room.onRoomLink = function() {
   room.onStadiumChange();
 }
 
 room.onStadiumChange = function(stadiumName, byPlayer) {
-  if(byPlayer.name != "Kozlov" &&  byPlayer.id != 0) {
+  if(byPlayer != null && byPlayer.name != "Kozlov" &&  byPlayer.id != 0) {
     switch(room.getConfig().map) {
       case 1:
         room.setCustomStadium(handball);

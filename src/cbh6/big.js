@@ -17,7 +17,7 @@
 const room = HBInit();
 
 room.pluginSpec = {
-  name: `fixmap`,
+  name: `big`,
   author: `alavilla/kozlov`,
   version: `1.0.0`,
   dependencies: [`sav/commands`],

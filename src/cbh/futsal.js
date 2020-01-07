@@ -27,9 +27,8 @@ room.pluginSpec = {
 };
 
 var futsal = `{
-{
 
-	"name" : "Futsal X4  haxbr.com",
+	"name" : "Futsal X4  (Bazinga!)",
 
 	"canBeStored" : false,
 
@@ -327,7 +326,6 @@ var futsal = `{
 
 	}
 }
-
 }`
 var handball = `{
 

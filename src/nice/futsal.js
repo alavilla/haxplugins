@@ -29,8 +29,6 @@ room.pluginSpec = {
 
 var futsal = `{
 
-{
-
 	"name" : "Handball X4 (CBH)",
 
 	"canBeStored" : false,
@@ -390,8 +388,6 @@ var futsal = `{
 		
 
 	}
-}
-
 
 
 }`

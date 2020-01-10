@@ -26,6 +26,7 @@ room.pluginSpec = {
   },
 };
 
+var officialRSHLHost = false;
 
 var real = `{
 

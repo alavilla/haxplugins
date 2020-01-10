@@ -28,7 +28,7 @@ room.pluginSpec = {
 
 var officialRSHLHost = false;
 
-var real = `{
+const rs = `{
 
 	"name" : "\ud835\udde5\ud835\uddd8\ud835\uddd4\ud835\udddf \ud835\udde6\ud835\udde2\ud835\uddd6\ud835\uddd6\ud835\uddd8\ud835\udde5 \ud835\ude23\ud835\ude3a \u0040\ud835\udda6\ud835\uddcb\ud835\uddba\ud835\uddc7\ud835\uddbd\ud835\uddbe\ud835\uddcc\ud835\uddab\ud835\uddc2\ud835\uddc0\ud835\uddba\ud835\uddcc\ud835\udda0\ud835\uddb1\ud835\udda6",
 
@@ -1154,7 +1154,7 @@ room.onStadiumChange = function(stadiumName, byPlayer) {
         room.setCustomStadium(handball);
         break;
       case 2:
-        room.setCustomStadium(real);
+        room.setCustomStadium(rs);
         break;
       default:
         room.setDefaultStadium("Big");	

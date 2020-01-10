@@ -649,27 +649,7 @@ var real = `{
 	}
 }`
 
-/* SETTINGS */
-//Musi być true jeśli hostujesz mecz ligowy, false - jeśli hostujesz publika
-var officialRSHLHost = false;
-/* ROOM */
-//
-//Jeśli nie hostujesz meczu ligowego, możesz ustawić poniższe wartości
 
-var roomName = "🏆 Real Soccer | v4 Con arbitro !myscore";
-var maxPlayers = 30;
-var roomPublic = true;
-var playerName = "🏁 Á𝗋𝖻𝗂𝗍𝗋𝗈 𝗕𝗢𝗧";
-
-/* STADIUM */
-//Wartości dotyczą boiska na którym rozgrywany jest mecz - wartości domyślne to oficjalna mapa RS
-var stadiumWidth = 1150;
-var stadiumHeight = 600;
-var radiusBall = 10;
-var throwInLeeway = 200;
-var greenLine = 510;
-
-/* SETTINGS */
 
 var triggerDistance = radiusBall + 15 + 0.01;
 var outLineY = stadiumWidth - (radiusBall / 2) + 6;

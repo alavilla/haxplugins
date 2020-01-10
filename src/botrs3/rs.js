@@ -742,14 +742,7 @@ function TakimlariDengele(redMaksimumOyuncuSayisi, blueMaksimumOyuncuSayisi)
 var isBallKickedOutside = false;
 var previousPlayerTouched;
 
-if(officialRSHLHost)
-{
-    roomName = "😜 RS | 4v4 | 🤖 Oto Hakem"
-    playerName = "Minerva"
-    maxPlayers = 20;
-    roomPublic = true;
-}
-var room = HBInit({ roomName: roomName, maxPlayers: maxPlayers, public: roomPublic, playerName: playerName});
+
 if(officialRSHLHost)
 {
     room.setScoreLimit(0);
